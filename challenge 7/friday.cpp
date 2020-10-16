@@ -1,9 +1,8 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main() {
-  string day= "";
-  cin>>day;
+
+string isFriday(string day){
   if(day=="Friday" || day=="friday"){
     cout<<"Yes, it's Friday!:)"<<endl;
   }
@@ -29,4 +28,10 @@ int main() {
     cout<<"Thats not even a day of the week!>:("<<endl;
   }
   return 0;
+}
+
+int main() {
+ string day="";
+ cin>>day;
+ isFriday(day); 
 }
